@@ -1,0 +1,26 @@
+{
+  "name": "devfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "author": "Mark Macneil",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "css-loader": "^3.6.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "flickity": "^2.2.1",
+    "flickity-imagesloaded": "^2.0.0"
+  }
+}
