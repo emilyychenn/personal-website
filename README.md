@@ -1,26 +1,20 @@
-# devfolio
-A simple, responsive, single-page portfolio and resume for developers built with Bulma, Sass, Font Awesome and Flickity.
+# Hello World, I'm Emily 👋
 
-View the [demo here](https://mmacneil.github.io/devfolio/).
+I'm a sophmore at [UBC](https://www.ubc.ca/) in Vancouver, BC, currently studying Computer Science and Cellular, Anatomical & Physiological Sciences. I'm fascinated by the intersection between society, health care, and computing!
 
-### Desktop version
-<img src="https://github.com/mmacneil/devfolio/blob/master/docs/devfolio-desktop.gif" />
+<br/>
 
-### Responsive version
-<img src="https://github.com/mmacneil/devfolio/blob/master/docs/devfolio-responsive.gif" height="485" />
 
-## Setup
+## About Me
 
-1. Clone, fork or create a template from this repository.
-2. Install required dependencies from your terminal by running `npm install` from the project folder root containing `package.json`.
- <pre>
- <code>src\>npm install</code></pre>
-3. Use webpack to compile and bundle the css/js by running `npm run build` from the project folder root containing `webpack.config.js`.  Webpack will also begin watching these files for changes and re-build as they're modified.
- <pre>
- <code>src\>npm run build</code></pre>
- 4. Open `index.html` locally in your favorite browser.
- 5. Modify accordingly - styles, colors and variables can be changed in `styles.scss`.  Refer to the Bulma docs for guidance on how to quickly customize further to suit your tastes using  [color helpers](https://bulma.io/documentation/modifiers/color-helpers/) and [variables](https://bulma.io/documentation/customize/variables/).  See the [Flickity](https://github.com/metafizzy/flickity) docs if you wish to modify the carousel.
- 
- ## Contact
- markmacneil@gmail.com
- 
+- 📍 Originally from Ottawa, Ontario
+- 🔎 Currently working on [pyLeafletTiler](https://github.com/emilyychenn/pyLeafletTiler-Sandbox), a collection of code to create tiles of histo images to allow display using the [Leaflet JavaScript library](https://leafletjs.com/).
+- 🌱 In the process of learning and experimenting with Gatsby and querying data in pages with GraphQL
+- 💻 TAing an introductory computer science course
+
+
+<br/>
+
+## Reach Out
+
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/emily-c-55680b124/) or reach out via email (emilylynnchen@gmail.com). Always looking to meet new people and make new friends 😊
