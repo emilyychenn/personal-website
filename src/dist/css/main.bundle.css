@@ -1762,7 +1762,6 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 }
 .button.is-primary {
   background-color: #454545;
-  /* background-image: url('img/background.jpeg'); */
   border-color: transparent;
   color: #fff;
 }
@@ -9099,7 +9098,6 @@ label.panel-block:hover {
 .hero-body,
 .section {
   padding: 3rem 1.5rem;
-  /* background-image: url("img/background.jpeg"); Not here :( */
 }
 @media screen and (min-width: 1024px) {
   .section.is-medium {

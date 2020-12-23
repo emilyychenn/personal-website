@@ -13,6 +13,31 @@
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation" style="background: url('img/background.jpg')">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
+        <a href="#aboutme" class="icon is-large has-text-light">
+          <h1>About</h1>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="#experience" class="icon is-large has-text-light">
+          <h1>Experience</h1>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="#projects" class="icon is-large has-text-light">
+          <h1>Projects</h1>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="#education" class="icon is-large has-text-light">
+          <h1>Education</h1>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="#contact" class="icon is-large has-text-light">
+          <h1>Contact</h1>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
         <a href="https://github.com/emilyychenn" class="icon is-large has-text-light">
           <i class="fab fa-2x fa-github"></i>
         </a>
@@ -23,8 +48,34 @@
         </a>
       </div>
     </div>
+
     <div class="navbar-menu">
       <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="#aboutme" class="icon is-large has-text-light">
+            <h1>About</h1>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#experience" class="icon is-large has-text-light">
+            <h1>Experience</h1>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#projects" class="icon is-large has-text-light">
+            <h1>Projects</h1>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#education" class="icon is-large has-text-light">
+            <h1>Education</h1>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="#contact" class="icon is-large has-text-light">
+            <h1>Contact</h1>
+          </a>
+        </div>
         <div class="navbar-item">
           <a href="https://github.com/emilyychenn" class="icon is-large has-text-light">
             <i class="fab fa-2x fa-github"></i>
@@ -35,11 +86,12 @@
             <i class="fas fa-2x fa-globe"></i>
           </a>
         </div>
+        
       </div>
     </div>
   </nav>
 
-  <section class="hero is-primary" style="background: url('img/background-copy.jpg')">
+  <section class="hero is-primary" style="background: url('img/background-copy.jpg'); height: 850px;">
     <div class="hero-body">
       <div class="container">
         <div class="level">
@@ -68,8 +120,9 @@
     </div>
   </section>
 
+  <a id = "aboutme">
   <section class="section">
-    <div class="container">
+    <div class="container" style="padding-top: 35px;">
       <h1 class="title">About Me</h1>
       <hr />
       <p>I'm a motivated second year student currently studying Cellular, Physiological & Anatomical 
@@ -79,6 +132,9 @@
       </p>
     </div>
   </section>
+  </a> 
+
+  <a id = "experience">
   <section class="section">
     <div class="container">
       <h1 class="title">Experience</h1>
@@ -183,7 +239,9 @@
     </div>
     
   </section>
+  </a>
 
+  <a id = "projects">
   <section class="section">
     <div class="container">
       <h1 class="title">Projects</h1>
@@ -203,7 +261,7 @@
               <article class="tile is-child notification">
                 <p class="title">PyLeafletTiler</p>
                 <figure class="image">
-                  <img class="modal-trigger" data-target="pyleaflettiler-modal" src="img/pyleaflettiler-cover.png">
+                  <img class="modal-trigger" data-target="pyleaflettiler-modal" src="img/pyleaflettiler-cover.jpg">
                 </figure>
               </article>
             </div>
@@ -233,7 +291,7 @@
               <article class="tile is-child notification">
                 <p class="title">ArduCryoFridge</p>
                 <figure class="image">
-                  <img class="modal-trigger" data-target="arducryofridge-modal" src="img/arducryofridge-cover.png">
+                  <img class="modal-trigger" data-target="arducryofridge-modal" src="img/carousel/arducryofridge/ardu-raspi.JPG">
                 </figure>
               </article>
             </div>
@@ -250,7 +308,9 @@
       </div>
     </div>
   </section>
+  </a>
 
+  <a id = "education">
   <section class="section">
     <div class="container">
       <h1 class="title">Education</h1>
@@ -276,7 +336,9 @@
       </div>
     </div>
   </section>
+  </a>
 
+  <a id = "contact">
   <section class="section">
     <div class="container">
       <h1 class="title">Contact</h1>
@@ -317,6 +379,7 @@
       </nav>
     </div>
   </section>
+  </a>
 
   <!-- Modals -->
   <div id="dianthus-modal" class="modal">
@@ -553,14 +616,14 @@
       </header>
       <section class="modal-card-body">
         <div id="arducryofridge-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+          <figure class="image carousel-cell">
+            <img src="img/carousel/arducryofridge/ardu-setup.JPG">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+          <figure class="image carousel-cell">
+            <img src="img/carousel/arducryofridge/ardu-console.png">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="image carousel-cell">
+            <img src="img/carousel/arducryofridge/ardu-docopt.png">
           </figure>
         </div>
 
@@ -571,10 +634,10 @@
             commodo
             consequat.</p>
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">Python</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">C++</span>
+            <span class="tag">Rasberry Pi</span>
           </div>
         </div>
 
