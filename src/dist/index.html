@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation" style="background: url('img/background.jpg')">
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation" style="background: url('img/clean-background2.jpg')">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
         <a href="#aboutme" class="icon is-large has-text-light">
@@ -19,7 +19,7 @@
       </div>
       <div class="navbar-item is-hidden-desktop">
         <a href="#experience" class="icon is-large has-text-light">
-          <h1>Experience</h1>
+          <h1>Experience </h1>
         </a>
       </div>
       <div class="navbar-item is-hidden-desktop">
@@ -91,25 +91,168 @@
     </div>
   </nav>
 
-  <section class="hero is-primary" style="background: url('img/background-copy.jpg'); height: 850px;">
+  <!-- <section class="hero is-primary" style="height: 500px;"> -->
+  <section class="hero is-primary" style="background: url('img/clean-background.jpg'); height:625px;">
     <div class="hero-body">
-      <div class="container">
+      <!-- <div class="container">
         <div class="level">
           <div class="level-item has-text-centered">
             <figure class="image is-128x128">
               <img class="is-rounded" src="img/me-big.png">
             </figure>
           </div>
+        </div> -->
+        
+        <div class="text">
+          <p>Hi! I’m </p>
+          <p>
+            <span class="word darkcolour">Emily.</span>
+            <span class="word olive">a &ensp; student.</span>
+            <span class="word salmon">a &ensp; badminton &ensp; enthusiast.</span>
+            <span class="word navy">an &ensp; avid &ensp; learner.</span>
+          </p>
         </div>
+
+        <!-- <style>
+          @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+          body {
+            font-family: 'Source Sans pro', sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+          }
+
+          .text {
+            position: absolute;
+            width: 700px;
+            left: 50%;
+            margin-left: -225px;
+            height: 40px;
+            top: 50%;
+            margin-top: -20px;
+          }
+
+          p {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+          }
+
+          .word {
+            position: absolute;
+            width: 500px;
+            opacity: 0;
+          }
+
+          .letter {
+            display: inline-block;
+            position: relative;
+            float: left;
+            transform: translateZ(25px);
+            transform-origin: 50% 50% 25px;
+          }
+
+          .letter.out {
+            transform: rotateX(90deg);
+            transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          }
+
+          .letter.behind {
+            transform: rotateX(-90deg);
+          }
+
+          .letter.in {
+            transform: rotateX(0deg);
+            transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+
+          .darkcolour {
+            color: #141021;
+          }
+
+          .olive {
+            color: #84a59d;
+          }
+
+          .salmon {
+            color: #f28482;
+          }
+
+          .navy {
+            color: #284b63;
+          }
+
+
+        </style> -->
+
+        
+        <script>
+          var words = document.getElementsByClassName('word');
+          var wordArray = [];
+          var currentWord = 0;
+
+          words[currentWord].style.opacity = 1;
+          for (var i = 0; i < words.length; i++) {
+            splitLetters(words[i]);
+          }
+
+          function changeWord() {
+            var cw = wordArray[currentWord];
+            var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+            for (var i = 0; i < cw.length; i++) {
+              animateLetterOut(cw, i);
+            }
+            
+            for (var i = 0; i < nw.length; i++) {
+              nw[i].className = 'letter behind';
+              nw[0].parentElement.style.opacity = 1;
+              animateLetterIn(nw, i);
+            }
+            
+            currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+          }
+
+          function animateLetterOut(cw, i) {
+            setTimeout(function() {
+              cw[i].className = 'letter out';
+            }, i*80);
+          }
+
+          function animateLetterIn(nw, i) {
+            setTimeout(function() {
+              nw[i].className = 'letter in';
+            }, 340+(i*80));
+          }
+
+          function splitLetters(word) {
+            var content = word.innerHTML;
+            word.innerHTML = '';
+            var letters = [];
+            for (var i = 0; i < content.length; i++) {
+              var letter = document.createElement('span');
+              letter.className = 'letter';
+              letter.innerHTML = content.charAt(i);
+              word.appendChild(letter);
+              letters.push(letter);
+            }
+            
+            wordArray.push(letters);
+          }
+
+          changeWord();
+          setInterval(changeWord, 4000);
+        </script>
+
+       
+
         <div class="columns has-text-centered">
           <div class="column">
-            <h1 class="title is-1">
+            <!-- <h1 class="title is-1">
               Emily Chen
-            </h1>
-            <h2 class="subtitle">
+            </h1> -->
+            <!-- <h2 class="subtitle">
               Sophmore @ the University of British Columbia
-            </h2>
-            <p>
+            </h2> -->
+            <p style="padding-top: 100px;">
               <a href="docs/resume.pdf" class="icon has-text-light">
                 <i class="fas fa-file-pdf"></i> <strong>Resume</strong>
               </a>
@@ -122,8 +265,10 @@
 
   <a id = "aboutme">
   <section class="section">
+  </a> 
     <div class="container" style="padding-top: 35px;">
       <h1 class="title">About Me</h1>
+   
       <hr />
       <p>I'm a motivated second year student currently studying Cellular, Physiological & Anatomical 
         Sciences and Computer Science, with experience building and scaling web applications 
@@ -132,10 +277,11 @@
       </p>
     </div>
   </section>
-  </a> 
+  
 
   <a id = "experience">
   <section class="section">
+  </a>
     <div class="container">
       <h1 class="title">Experience</h1>
       <hr />
@@ -239,10 +385,11 @@
     </div>
     
   </section>
-  </a>
+  
 
   <a id = "projects">
   <section class="section">
+  </a>
     <div class="container">
       <h1 class="title">Projects</h1>
       <hr />
@@ -308,10 +455,11 @@
       </div>
     </div>
   </section>
-  </a>
+  
 
   <a id = "education">
   <section class="section">
+  </a>
     <div class="container">
       <h1 class="title">Education</h1>
       <hr />
@@ -336,10 +484,11 @@
       </div>
     </div>
   </section>
-  </a>
+
 
   <a id = "contact">
   <section class="section">
+  </a>
     <div class="container">
       <h1 class="title">Contact</h1>
       <hr />
@@ -379,7 +528,7 @@
       </nav>
     </div>
   </section>
-  </a>
+ 
 
   <!-- Modals -->
   <div id="dianthus-modal" class="modal">
@@ -427,7 +576,7 @@
           <ul>
             <li>Winner of Best UX/UI Design - awarded by Kabam</li>
             <li>Winner of #SocialForGood award - awarded by HootSuite</li>
-            <li>Winner of 'Leverage technology to manage/improve any mental health related issue' award - awarded by Telus</li>
+            <li>Winner of 'Leverage technology to manage/improve any mental health related issue' award - awarded by Telus</li> <br>
           </ul>
 
           <div class="tags">
@@ -530,7 +679,7 @@
             <li>Edit any transaction by changing the contact, amount owed, or date</li>
             <li>View a list of contacts and their overall owed balance, as well as a list of transactions for each contact</li>
             <li>Have the option to save the data and list of contacts before quitting the app</li>
-            <li>Optionally load account data from a file when the program starts</li>
+            <li>Optionally load account data from a file when the program starts</li> <br> 
           </ul>
           <div class="tags">
             <span class="tag">Java</span>
@@ -587,7 +736,7 @@
               <li><b>Frontend</b> is built based on <a href="http://demos.creative-tim.com/blk-design-system/index.html">Blk• Design System</a> Bootstrap 4 kit. HTML, CSS and JavaScript are used to customize.</li>
               <li><b>Backend</b> is implemented with Ruby on Rails and PostgreSQL</li>
               <li><b>Booking system</b> relies on Google calendar API</li>
-              <li><b>Chat platform</b> utilizes <a href="https://github.com/sendbird/SendBird-SDK-JavaScript">SendBird SDK</a> and Express</li>
+              <li><b>Chat platform</b> utilizes <a href="https://github.com/sendbird/SendBird-SDK-JavaScript">SendBird SDK</a> and Express</li> <br> 
             </ul>
           <div class="tags">
             <span class="tag">HTML</span>
@@ -628,11 +777,22 @@
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p><br>A project to control and monitor the PT410 CryoFridge that's keeping 
+            the 7T MRI Magnet cool and running. Allows the user to configure the duration 
+            of ontime and offtime for each on/off cycle, switch on or off immediately, 
+            and delay the start of an on/off cycle by a user-specified duration of time.
+             Logs button press events (i.e. when a switch is manually flipped) to a 
+             logfile that is named after the current date.
+
+             <br>
+          </p>
+          <ul>
+            <li>Built with push buttons and an LED light to indicate the state (on/off) of the CryoFridge</li>
+            <li>Python code senses Arduino input/output via <a href="https://pyserial.readthedocs.io/en/latest/pyserial_api.html">PySerial</a></li>
+            <li>Websockets serial console provides an interface for the user to remotely monitor and control the Arduino</li>
+            <li><a href="http://docopt.org/">Docopt</a> (command line interface) allows the user to specify commands</li>
+            <br>
+          </ul>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Arduino</span>
@@ -657,28 +817,19 @@
       </header>
       <section class="modal-card-body">
         <div id="devfolio-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="image carousel-cell">
+            <img src="img/devfolio-cover.png">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p>Deployed via Netlify. View the <a href="https://github.com/emilyychenn/devfolio">repository</a> on GitHub. <br><br></p>
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">SCSS</span>
           </div>
         </div>
 

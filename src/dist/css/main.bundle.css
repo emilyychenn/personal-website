@@ -133,6 +133,11 @@ a.icon > strong {
     transform: rotate(359deg);
   }
 }
+
+/* landing page typing letters */
+
+
+
 .breadcrumb,
 .button,
 .delete,
@@ -161,7 +166,8 @@ a.icon > strong {
   height: 0.625em;
   margin-top: -0.4375em;
   pointer-events: none;
-  position: absolute;
+  position: absolute; /* not this one :'(*/
+  /* position: fixed; */
   top: 50%;
   transform: rotate(-45deg);
   transform-origin: center;
@@ -5569,7 +5575,8 @@ a.list-item {
 .navbar {
   background-color: #fff;
   min-height: 3.25rem;
-  position: relative;
+  /* position: relative; */
+  positon: fixed;
   z-index: 30;
 }
 .navbar.is-white {
@@ -6227,7 +6234,8 @@ html.has-navbar-fixed-bottom {
   cursor: pointer;
   display: block;
   height: 3.25rem;
-  position: relative;
+  /* position: relative; */
+  position: fixed;
   width: 3.25rem;
   margin-left: auto;
 }
@@ -6236,7 +6244,8 @@ html.has-navbar-fixed-bottom {
   display: block;
   height: 1px;
   left: calc(50% - 8px);
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   transform-origin: center;
   transition-duration: 86ms;
   transition-property: background-color, opacity, transform;
@@ -6269,11 +6278,12 @@ html.has-navbar-fixed-bottom {
 }
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: #694444;
   display: block;
   line-height: 1.5;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 1.5rem;
   position: relative;
+  /* position: fixed;  NOT HERE :'(*/
 }
 .navbar-item .icon:only-child,
 .navbar-link .icon:only-child {

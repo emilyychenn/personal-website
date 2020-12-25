@@ -5,6 +5,12 @@ require('flickity-imagesloaded');
 
 var $carousels = new Array();
 
+// Landing page typing letters
+
+
+
+
+
 // Modals
 
 var rootEl = document.documentElement;
