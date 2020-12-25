@@ -6204,6 +6204,14 @@ a.list-item {
 .navbar.is-fixed-top {
   top: 0;
 }
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
 body.has-navbar-fixed-top,
 html.has-navbar-fixed-top {
   padding-top: 3.25rem;
