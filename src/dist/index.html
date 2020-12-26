@@ -102,51 +102,82 @@
             </figure>
           </div>
         </div> -->
+        <!-- <div>
+          <p class="rotating-title">Hello World!</p>
+        </div> -->
         
-        <div class="text">
-          <p>Hi! I’m </p>
-          <p>
-            <span class="word darkcolour">Emily.</span>
-            <span class="word olive">a &ensp; student.</span>
-            <span class="word salmon">a &ensp; badminton &ensp; enthusiast.</span>
-            <span class="word navy">an &ensp; avid &ensp; learner.</span>
+        <div class="rotating-text">
+          <p class="rotating-body">Hi! I’m &NegativeThinSpace;</p>
+          <p class="rotating-body">
+            <span class="word white">Emily.</span>
+            <span class="word olive">a researcher.</span>
+            <span class="word salmon">an avid learner.</span>
+            <span class="word navy">a badminton enthusiast.</span>
           </p>
         </div>
 
-        <!-- <style>
-          @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-          body {
-            font-family: 'Source Sans pro', sans-serif;
+        <style>
+          /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:600); */
+          @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+          .rotating-body {
+            font-family: 'source sans pro';
             font-weight: bold;
-            font-size: 40px;
-          }
-
-          .text {
-            position: absolute;
-            width: 700px;
-            left: 50%;
-            margin-left: -225px;
-            height: 40px;
-            top: 50%;
-            margin-top: -20px;
-          }
-
-          p {
+            /* font-size: 55px; */
+            font-size: 4em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
             display: inline-block;
             vertical-align: top;
             margin: 0;
           }
 
+          .rotating-text {
+            position: absolute;
+            width: 700px;
+            left: 50%;
+            /* margin-left: -225px; */
+            margin-left: -425px;
+            height: 40px;
+            top: 50%;
+            /* margin-top: -100px; */
+            margin-top: -100px;
+          }
+
+          .rotating-title {
+            /* padding-top: 100px; */
+            /* padding-left: 100px; */
+
+            font-family: 'source sans pro';
+            font-weight: bold;
+            /* font-size: 55px; */
+            font-size: 4em;
+            /* display: inline-block; */
+            /* vertical-align: top; */
+            /* margin: 0; */
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+
+          }
+
           .word {
             position: absolute;
-            width: 500px;
+            width: 1000px;
             opacity: 0;
+            display: inline-block;
+            white-space: pre-wrap;
           }
 
           .letter {
             display: inline-block;
             position: relative;
-            float: left;
+            /* float: left; */
             transform: translateZ(25px);
             transform-origin: 50% 50% 25px;
           }
@@ -181,8 +212,12 @@
             color: #284b63;
           }
 
+          .white {
+            color: #FFFFFF;
+          }
 
-        </style> -->
+
+        </style>
 
         
         <script>
@@ -239,7 +274,7 @@
           }
 
           changeWord();
-          setInterval(changeWord, 4000);
+          setInterval(changeWord, 3200);
         </script>
 
        
@@ -252,14 +287,14 @@
             <!-- <h2 class="subtitle">
               Sophmore @ the University of British Columbia
             </h2> -->
-            <p style="padding-top: 100px;">
+            <!-- <p style="padding-top: 100px;">
               <a href="docs/resume.pdf" class="icon has-text-light">
                 <i class="fas fa-file-pdf"></i> <strong>Resume</strong>
               </a>
-            </p>
+            </p> -->
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </section>
 
@@ -270,10 +305,14 @@
       <h1 class="title">About Me</h1>
    
       <hr />
-      <p>I'm a motivated second year student currently studying Cellular, Physiological & Anatomical 
-        Sciences and Computer Science, with experience building and scaling web applications 
-        in various domains. I'm also passionate about open-source contributions, working in high impact 
-        environments, and helping growing development teams build great products.
+      <p>Hi! I'm Emily, an aspiring health tech innovator & philanthropist. Based in Ottawa, Ontario,
+        I am currently calling the (virtual) University of British Columbia home, where 
+        I am pursuing my second year of Honours Cellular, Anatomical & Physiological Sciences 
+        and Computer Science. I'm interested in leveraging technology to bridge the world's 
+        inequalities, particularly in the areas of healthcare and social justice. Things I am 
+        just as passionate about are creative software design, social entrepreneurship, 
+        and the use of storytelling to bring light to important world issues. 
+        Outside of work, I am an avid reader, runner, and love testing new recipes!
       </p>
     </div>
   </section>
@@ -826,7 +865,11 @@
         </div>
 
         <div class="content">
-          <p>Deployed via Netlify. View the <a href="https://github.com/emilyychenn/devfolio">repository</a> on GitHub. <br><br></p>
+          <p><br>Deployed via Netlify. I first designed this on Canva, and prototyped on Figma, then 
+            tested various elements on CodePen before implementing them on this website.
+
+            <br> <br>
+            View the <a href="https://github.com/emilyychenn/devfolio">repository</a> on GitHub. <br><br></p>
           <div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>

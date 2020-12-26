@@ -53,6 +53,10 @@ function openModal(target) {
             }
         }
     }
+    var navbar = document.getElementById("navbar-menu");
+    navbar.classList.add("navbar-hidden");
+    navbar.hide();
+    // document.getElementById("navbar-menu").style.visibility = "hidden";
 }
 
 function closeModals() {
@@ -60,6 +64,10 @@ function closeModals() {
     $modals.forEach(function ($el) {
         $el.classList.remove('is-active');
     });
+    var navbar = document.getElementById("navbar-menu");
+    navbar.classList.remove("navbar-hidden");
+    navbar.show();
+    // document.getElementById("navbar-menu").style.visibility = "visible";
 }
 
 // Functions

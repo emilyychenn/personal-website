@@ -155,6 +155,8 @@ a.icon > strong {
   -ms-user-select: none;
   user-select: none;
 }
+
+
 .navbar-link:not(.is-arrowless):after,
 .select:not(.is-multiple):not(.is-loading):after {
   border: 3px solid transparent;
@@ -6205,12 +6207,20 @@ a.list-item {
   top: 0;
 }
 
+/* for sticky header */
 .navbar-fixed-top {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 999;
 }
+
+.navbar-hidden {
+  visibility: hidden;
+  height: 0px;
+}
+
+
 
 body.has-navbar-fixed-top,
 html.has-navbar-fixed-top {
