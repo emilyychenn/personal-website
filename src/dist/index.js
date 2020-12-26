@@ -5,23 +5,18 @@ require('flickity-imagesloaded');
 
 var $carousels = new Array();
 
-// Landing page typing letters
-
-
-
-
-
 // Modals
 
 var rootEl = document.documentElement;
 var $modals = getAll('.modal');
 var $modalTriggers = getAll('.modal-trigger');
 var $modalCloses = getAll('.modal-card-head .delete, .modal-card-foot .button');
-
+console.log("modalTrigger.length = " + $modalTriggers.length);
 if ($modalTriggers.length > 0) {
     $modalTriggers.forEach(function ($el) {
         $el.addEventListener('click', function () {
             var target = $el.dataset.target;
+            console.log("before open modal");
             openModal(target);
         });
     });
@@ -30,12 +25,21 @@ if ($modalTriggers.length > 0) {
 if ($modalCloses.length > 0) {
     $modalCloses.forEach(function ($el) {
         $el.addEventListener('click', function () {
+            console.log("before close modal");
             closeModals();
         });
     });
 }
 
 function openModal(target) {
+    console.log("Entering openModal");
+    var navbar = document.getElementById("navbar-menu");
+    console.log("got navbar: " + navbar);
+    navbar.classList.add("navbar-hidden");
+    navbar.hide();
+    document.getElementById("navbar-menu").style.visibility = "hidden";
+
+
     var $target = document.getElementById(target);
     rootEl.classList.add('is-clipped');
     $target.classList.add('is-active');
@@ -53,10 +57,6 @@ function openModal(target) {
             }
         }
     }
-    var navbar = document.getElementById("navbar-menu");
-    navbar.classList.add("navbar-hidden");
-    navbar.hide();
-    // document.getElementById("navbar-menu").style.visibility = "hidden";
 }
 
 function closeModals() {
@@ -67,7 +67,7 @@ function closeModals() {
     var navbar = document.getElementById("navbar-menu");
     navbar.classList.remove("navbar-hidden");
     navbar.show();
-    // document.getElementById("navbar-menu").style.visibility = "visible";
+    document.getElementById("navbar-menu").style.visibility = "visible";
 }
 
 // Functions

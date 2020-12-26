@@ -887,6 +887,7 @@ a.has-text-black:hover {
 a.has-text-light:focus,
 a.has-text-light:hover {
   color: #dbdbdb !important;
+  /* color: #f7595f; POSSIBLY HERE!! COME BACK AND LOOK*/
 }
 .has-background-light {
   background-color: #f5f5f5 !important;
@@ -999,9 +1000,11 @@ a.has-text-danger:hover {
 }
 .has-text-grey-lighter {
   color: #dbdbdb !important;
+  /* color: #f7595f; NOT HERE*/
 }
 .has-background-grey-lighter {
   background-color: #dbdbdb !important;
+  /* background-color: #009e6c; NOT HERE!*/
 }
 .has-text-white-ter {
   color: #f5f5f5 !important;
@@ -2526,6 +2529,7 @@ fieldset[disabled] .button {
   background-color: #f5f5f5;
   border-color: #dbdbdb;
   color: #7a7a7a;
+  /* color: #009e6c; NOT HERE :'(*/
   box-shadow: none;
   pointer-events: none;
 }
@@ -6540,6 +6544,7 @@ a.navbar-item:hover {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     border-top: 2px solid #dbdbdb;
+    /* border-top: 2px solid #009e6c; NOT HERE :'( */
     box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
     display: none;
     font-size: 0.875rem;
