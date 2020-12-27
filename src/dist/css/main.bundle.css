@@ -136,8 +136,13 @@ a.icon > strong {
   }
 }
 
-/* landing page typing letters */
-
+/* landing page background sizing */
+/* .landing-page {
+  background: url("../img/background-warm-large.jpg") top left no-repeat;
+  height: 0;
+  background-size: cover;
+  padding-top: 50%;
+} */
 
 
 .breadcrumb,
