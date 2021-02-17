@@ -11,7 +11,7 @@ I'm a sophmore at [UBC](https://www.ubc.ca/) in Vancouver, BC, currently studyin
 
 - 📍 Originally from Ottawa, Ontario
 - 🔎 Currently working on [pyLeafletTiler](https://github.com/emilyychenn/pyLeafletTiler-Sandbox), a collection of code to create tiles of histo images to allow display using the [Leaflet JavaScript library](https://leafletjs.com/).
-- 🌱 In the process of learning and experimenting with Gatsby and querying data in pages with GraphQL
+- 🌱 In the process of learning R, C, and React
 - 💻 TAing an introductory computer science course
 
 
