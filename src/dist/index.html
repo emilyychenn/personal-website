@@ -297,7 +297,7 @@
    
       <hr />
       <p class="aboutme-description">Hello there, welcome to my corner of the internet! I'm Emily,
-         a software engineer during the day and climbing + badminton enthusiast all the time! Currently, I'm based in Vancouver, Canada
+         a software engineer during the day and running / bouldering / badminton enthusiast all the time! Currently, I'm based in Vancouver, Canada
         and studying <a href="https://www.cs.ubc.ca/students/undergrad/degree-programs#softeng" target="_blank">
         Honours Computer Science, Software Engineering</a> and a 
         <a href="https://www.sauder.ubc.ca/programs/dual-degrees/bachelor-and-master-management" target="_blank">Master of Management</a> @ UBC.
@@ -325,7 +325,32 @@
       <h1 class="title">Experience</h1>
       <hr />
 
-      <div class="card">
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/snap-logo.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Incoming Software Developer Intern</p>
+              <p class="subtitle is-6">Snap: <time datetime="2022-9">Sep 2022</time> - <time
+                  datetime="2022-12">Dec 2022</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>More updates to come!</li>
+            </ul>
+            <div class="tags">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card card-gap">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
@@ -336,18 +361,19 @@
             <div class="media-content">
               <p class="title is-4">Software Engineer Intern - Developer Publications: Backend & Infra team</p>
               <p class="subtitle is-6">Apple: <time datetime="2022-1">Jan 2022</time> - <time
-                  datetime="2022-5">Present</time> </p>
+                  datetime="2022-5">May 2022</time> </p>
             </div>
           </div>
           <div class="content">
             <ul>
-              <li>Currently working on a project related to Apple's <a href="https://developer.apple.com/documentation/docc" target="blank">DocC Documentation Compiler</a>.</li>
-              <li>More updates to come!</li>
+              <li>Created a custom admin interface using Ruby on Rails as part of the Developer Publications Backend & Infra team.</li>
+              <li>Implemented MVC design pattern, saving hundreds of hours of developer time and streamlining engineering processes for the team.</li>
+              <li>Ensured code coverage and functionality by writing unit tests and integration tests for each feature added.</li>
             </ul>
             <div class="tags">
-              <span class="tag">Ruby</span>
+              <span class="tag">Ruby on Rails</span>
               <span class="tag">PostgreSQL</span>
-              <span class="tag">Cassandra</span>
+              <span class="tag">CassandraDB</span>
               <span class="tag">HTML/CSS</span>
               <span class="tag">Git</span>
             </div>
@@ -366,7 +392,7 @@
             <div class="media-content">
               <p class="title is-4">Software Engineer Intern - Garage</p>
               <p class="subtitle is-6">Microsoft: <time datetime="2021-5">May 2021</time> - <time
-                  datetime="2020-12">Aug 2021</time> </p>
+                  datetime="2021-8">Aug 2021</time> </p>
             </div>
           </div>
           <div class="content">
@@ -387,7 +413,35 @@
               <span class="tag">XAML</span>
               <span class="tag">JavaScript</span>
               <span class="tag">HTML/CSS</span>
-              <span class="tag">Azure</span>
+              <span class="tag">Azure DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/microsoft-logo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Software Engineer Intern</p>
+              <p class="subtitle is-6">Microsoft: <time datetime="2022-5">May 2022</time> - <time
+                  datetime="2022-8">Aug 2022</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Return software engineering internship.</li>
+              <li>Currently working on building a full-stack web app for Azure Groups Membership Management — more updates to come!</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">Blazor</span>
+              <span class="tag">WebAssembly</span>
+              <span class="tag">Azure DevOps</span>
             </div>
           </div>
         </div>
@@ -508,10 +562,19 @@
   </a>
     <div class="container" style="padding-top: 70px;">
       <h1 class="title">Projects</h1>
+      <h3>Click each tile for more info!</h3>
       <hr />
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">LP Interview Scheduler</p>
+                <figure class="image">
+                  <img class="modal-trigger" data-target="lpinterviewscheduler-modal" src="img/lpinterviewscheduler-cover.png">
+                </figure>
+              </article>
+            </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
                 <p class="title">ArduCryoFridge</p>
@@ -528,14 +591,6 @@
                 </figure>
               </article>
             </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Common Grounds</p>
-                <figure class="image">
-                  <img class="modal-trigger" data-target="commongrounds-modal" src="img/carousel/commongrounds/commongrounds-cover.png">
-                </figure>
-              </article>
-            </div>
           </div>
         </div>
       </div>
@@ -545,17 +600,9 @@
           <div class="tile">
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Eyebotics</p>
+                <p class="title">Common Grounds</p>
                 <figure class="image">
-                  <img class="modal-trigger" data-target="eyebotics-modal" src="img/carousel/eyebotics/cover.jpg">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">R.A.N.T.</p>
-                <figure class="image">
-                  <img class="modal-trigger" data-target="rant-modal" src="img/carousel/rant/rant-cover.png">
+                  <img class="modal-trigger" data-target="commongrounds-modal" src="img/carousel/commongrounds/commongrounds-cover.png">
                 </figure>
               </article>
             </div>
@@ -564,6 +611,14 @@
                 <p class="title">Lendr</p>
                 <figure class="image">
                   <img class="modal-trigger" data-target="lendr-modal" src="img/lendr-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">R.A.N.T.</p>
+                <figure class="image">
+                  <img class="modal-trigger" data-target="rant-modal" src="img/carousel/rant/rant-cover.png">
                 </figure>
               </article>
             </div>
@@ -582,12 +637,11 @@
                 </figure>
               </article>
             </div>
-            
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">FB Social Graph</p>
+                <p class="title">Eyebotics</p>
                 <figure class="image">
-                  <img class="modal-trigger" data-target="fbfriendsgraph-modal" src="img/carousel/fbfriendsgraph/fbfriendsgraph-cover.png">
+                  <img class="modal-trigger" data-target="eyebotics-modal" src="img/carousel/eyebotics/cover.jpg">
                 </figure>
               </article>
             </div>
@@ -623,22 +677,23 @@
                 datetime="2023-12">Dec 2023</time></p>
           </div>
           <div class="content">
-            BSc Honours in Computer Science, Software Engineering Option.
-            <br><br> Activities and Involvement:
+            BSc Honours in Computer Science, Software Engineering Option;
+            <a href="https://www.sauder.ubc.ca/programs/dual-degrees/bachelor-and-master-management" target="_blank">Dual Degree with UBC's Master of Management</a>.
+            <br><br> <b>Activities and Involvement:</b>
             <ul>
               <li>UBC Dean's List 2019-20, 2020-21</li>
-              <li><a href='https://ubclaunchpad.com/' target="_blank">UBC Launchpad</a> Software Engineering Design Team, Developer</li>
+              <li><a href='https://ubclaunchpad.com/' target="_blank">UBC Launchpad</a> Software Engineering Design Team, Developer 2021-2022</li>
               <li><a href='https://www.aiesec.ca/' target="_blank">AIESEC</a> Vice President Finance 2021, Vice President Incoming Global Talent 2020, Outgoing Exchange Member 2019</li>
               <li><a href='https://sus.ubc.ca/' target="_blank">Science Undergraduate Society</a> Elections Chair 2020-2021</li>
               <li><a href='https://hotpotatoinitiative.ca/' target="_blank">Hot Potato Initiative</a> Ambassador 2020-2021</li>
             </ul>
 
-            <br>Relevant Courses:
+            <br><b>Relevant Courses:</b>
             <ul>
               <li>CPSC 110 (Systematic Programming), 121 (Models of Computation)</li>
               <li>CPSC 210 (Software Construction), 213 (Computer Systems), 221 (Data Structures & Algorithms)</li>
               <li>CPSC 304 (Relational Databases), CPSC 310 (Software Engineering), 311 (Definition of Programming Languages), 320 (Algorithm Design & Analysis)</li>
-              <li style="font-style: italic;">Next term: 313 (Computer Hardware & Operating Systems), 317 (Internet Computing), 319 (Software Engineering Project)</li>
+              <li style="font-style: italic;"><b>Next term:</b> 313 (Computer Hardware & Operating Systems), 317 (Internet Computing), 319 (Software Engineering Project), 411 (Compiler Construction)</li>
             </ul>
 
             <!-- TODO: fix formatting for these?? -->
@@ -914,8 +969,8 @@
             <br>
           </p>
 
-            View a <a href="https://youtu.be/dBzB8ka0Mp0">video demo</a> of the project, the
-                  <a href="https://devpost.com/software/eyebotics">Devpost submission</a>, or the
+            View a <a href="https://youtu.be/dBzB8ka0Mp0" target="_blank">video demo</a> of the project, the
+                  <a href="https://devpost.com/software/eyebotics" target="_blank">Devpost submission</a>, or the
                   <a href="https://github.com/StuffByLiang/Eyebotics" target="_blank">Github Repository</a>. <br><br>
           <div class="tags">
             <span class="tag">CSS</span>
@@ -1043,7 +1098,7 @@
 
             <br>
 
-            View a   <a href="https://www.youtube.com/watch?v=8tKdpdpu34s&ab_channel=EmilyChu">video demo</a> of the project, the
+            View a   <a href="https://www.youtube.com/watch?v=8tKdpdpu34s&ab_channel=EmilyChu" target="_blank">video demo</a> of the project, the
                      <a href="https://devpost.com/software/rant-dzyl0t" target="_blank">Devpost submission</a>, or the
                      <a href="https://github.com/emily-chu/RANT" target="_blank">Github repository</a>. <br><br></p>
           <div class="tags">
@@ -1098,8 +1153,8 @@
             <br>
           </p>
 
-            View a <a href="https://youtu.be/ChjT2z8_1Xc">video demo</a> of the project, the
-                   <a href="https://devpost.com/software/lgbtq-friendliness-map">Devpost submission</a>, or the
+            View a <a href="https://youtu.be/ChjT2z8_1Xc" target="_blank">video demo</a> of the project, the
+                   <a href="https://devpost.com/software/lgbtq-friendliness-map" target="_blank">Devpost submission</a>, or the
                    <a href="https://github.com/emilyychenn/lgbtq-map" target="_blank">Github Repository</a>. <br><br>
           <div class="tags">
             <span class="tag">CSS</span>
@@ -1120,39 +1175,62 @@
     </div>
   </div>
 
-  <div id="fbfriendsgraph-modal" class="modal">
+  <div id="lpinterviewscheduler-modal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card" style="padding-top: 70px;">
       <header class="modal-card-head">
-        <p class="modal-card-title">Facebook Social Network Visualizer</p>
+        <p class="modal-card-title">UBC Launchpad - Custom Interview Scheduler</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <div id="fbfriendsgraph-modal-carousel" class="carousel">
+        <div id="lpinterviewscheduler-modal-carousel" class="carousel">
           <figure class="image carousel-cell">
-            <img src="img/carousel/fbfriendsgraph/fbfriendsgraph-cover.png">
+            <img src="img/carousel/lpinterviewscheduler/slide1.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide2.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide3.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide4.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide5.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide6.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide7.png">
+          </figure>
+          <figure class="image carousel-cell">
+            <img src="img/carousel/lpinterviewscheduler/slide8.png">
           </figure>
         </div>
 
         <div class="content">
-            A MERN-Stack application that scrapes users' facebook friend data to construct and visually depict
-            users' friends in a graph form. Can illustrate which friends also know each other, and test 
-            Kevin Bacon's theory about having six degrees of freedom from one friend to the other (without 
-            including the user themselves).
+          <br>
+            A custom-built interview scheduling platform built and designed
+            for the <a href="https://ubclaunchpad.com/" target="_blank">UBC Launchpad software engineering design team</a> to use during their annual team hiring (hiring ~70 members out of 250+ applicants).
 
-            <br> <br>
-            [PROJECT CURRENTLY IN PROGRESS - MORE TO COME SOON]
             <br>
-          </p>
+            <ul>
+              <li>Scalable solution featuring automated interview scheduling for multiple interviewers and one interviewee.</li>
+              <li>Takes in multiple interviewers' schedules and merges them, producing a custom-generated booking link with all available times to be sent to interviewees.</li>
+            </ul>
 
-            View the <a href="https://github.com/emilyychenn/facebook-friends-graph" target="_blank">Github Repository</a> (under development). <br><br>
+            View a   <a href="https://youtu.be/Bta503E3liQ" target="_blank">video demo</a> of the project or the
+                     <a href="https://github.com/ubclaunchpad/lp-interview-scheduler" target="_blank">Github repository</a>. <br><br></p>
           <div class="tags">
-            <span class="tag">MongoDB</span>
-            <span class="tag">ExpressJS</span>
+            <span class="tag">TypeScript</span>
             <span class="tag">React</span>
-            <span class="tag">NodeJS</span>
-            <span class="tag">Python</span>
-            <span class="tag">Facebook Developer Tools</span> 
+            <span class="tag">ExpressJS</span>
+            <span class="tag">css</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Google Cloud</span>
+            <span class="tag">Docker</span>
           </div>
         </div>
 
@@ -1162,6 +1240,8 @@
       </footer>
     </div>
   </div>
+
+
 
   <div id="commongrounds-modal" class="modal">
     <div class="modal-background"></div>
@@ -1205,7 +1285,7 @@
               <li>Winner of Microsoft's Azure Challenge</li>
             </ul>
 
-            View a   <a href="https://youtu.be/_pzfJAEyStA">video demo</a> of the project, the
+            View a   <a href="https://youtu.be/_pzfJAEyStA" target="_blank">video demo</a> of the project, the
                      <a href="https://devpost.com/software/common-grounds" target="_blank">Devpost submission</a>, or the
                      <a href="https://github.com/danielmccormick/common-grounds-mirror" target="_blank">Github repository</a>. <br><br></p>
           <div class="tags">
