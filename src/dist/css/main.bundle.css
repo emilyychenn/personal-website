@@ -785,6 +785,12 @@ table th {
 .has-text-right {
   text-align: right !important;
 }
+@media screen and (max-width: 350px) {
+
+}
+@media screen and (max-width: 480px) {
+  
+}
 @media screen and (max-width: 768px) {
   .has-text-centered-mobile {
     text-align: center !important;
