@@ -7,11 +7,11 @@ Welcome to my personal portfolio website! More updates to come. Landing page and
 
 ## About Me
 
-I'm a sophmore at [UBC](https://www.ubc.ca/) in Vancouver, BC, currently studying Computer Science and Cellular, Anatomical & Physiological Sciences. I'm fascinated by the intersection between society, health care, and computing!
+I'm a senior at [UBC](https://www.ubc.ca/) in Vancouver, BC, currently studying Honours Computer Science and a Master of Management. I'm fascinated by the intersection between society, humans, and computing!
 
 - 📍 Originally from Ottawa, Ontario
-- 🔎 Currently working on [pyLeafletTiler](https://github.com/emilyychenn/pyLeafletTiler-Sandbox), a collection of code to create tiles of histo images to allow display using the [Leaflet JavaScript library](https://leafletjs.com/).
-- 🌱 In the process of learning R, C, and React
+- 🔎 Currently learning swift, also exploring reading more books, and am always open to book recommendations!
+- 🌱 Loves going for runs, hikes, and adventuring around new places 
 - 💻 TAing an introductory computer science course
 
 
@@ -19,4 +19,4 @@ I'm a sophmore at [UBC](https://www.ubc.ca/) in Vancouver, BC, currently studyin
 
 ## Reach Out
 
-Feel free to connect on [LinkedIn](https://www.linkedin.com/in/emily-c-55680b124/) or reach out via email (emilylynnchen@gmail.com). Always looking to meet new people and make new friends 😊
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/emilyychenn/) or reach out via email (emilylynnchen@gmail.com). Always looking to meet new people and make new friends 😊
